@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCell" customModule="Shopping_basket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="336"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="336"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUg-a4-ZfN">
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="336"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-Bv-5PR">
+                                <rect key="frame" x="12" y="286" width="216" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="9nS-Ss-7Fz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkO-bv-yNF">
+                                <rect key="frame" x="12" y="310" width="216" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="hXh-jN-EO5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efr-mH-e8y" customClass="BuyButton" customModule="Shopping_basket" customModuleProvider="target">
+                                <rect key="frame" x="240" y="288" width="90" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="GoX-Kb-kir"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Add to list">
+                                    <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.13216145830000001" green="0.24447820219999999" blue="0.39102285879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onAddButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="oNl-I1-nnz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pbp-xW-hFZ">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="276"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20469468939999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="efr-mH-e8y" firstAttribute="top" secondItem="Pbp-xW-hFZ" secondAttribute="bottom" constant="12" id="335-cb-coa"/>
+                            <constraint firstItem="uYJ-Bv-5PR" firstAttribute="top" secondItem="Pbp-xW-hFZ" secondAttribute="bottom" constant="10" id="A9Z-E4-NxV"/>
+                            <constraint firstItem="efr-mH-e8y" firstAttribute="leading" secondItem="uYJ-Bv-5PR" secondAttribute="trailing" constant="12" id="DVk-of-iPt"/>
+                            <constraint firstItem="Pbp-xW-hFZ" firstAttribute="leading" secondItem="aUg-a4-ZfN" secondAttribute="leading" id="LCo-Wc-2QP"/>
+                            <constraint firstItem="uYJ-Bv-5PR" firstAttribute="leading" secondItem="aUg-a4-ZfN" secondAttribute="leading" constant="12" id="a5a-6R-QnI"/>
+                            <constraint firstAttribute="trailing" secondItem="efr-mH-e8y" secondAttribute="trailing" constant="8" id="d9a-Cr-rjX"/>
+                            <constraint firstItem="Pbp-xW-hFZ" firstAttribute="top" secondItem="aUg-a4-ZfN" secondAttribute="top" id="eNy-jr-eq7"/>
+                            <constraint firstItem="lkO-bv-yNF" firstAttribute="leading" secondItem="uYJ-Bv-5PR" secondAttribute="leading" id="ebh-1n-h8d"/>
+                            <constraint firstItem="lkO-bv-yNF" firstAttribute="top" secondItem="uYJ-Bv-5PR" secondAttribute="bottom" constant="4" id="fIo-ad-uvj"/>
+                            <constraint firstItem="lkO-bv-yNF" firstAttribute="trailing" secondItem="uYJ-Bv-5PR" secondAttribute="trailing" id="gA1-zc-22F"/>
+                            <constraint firstAttribute="trailing" secondItem="Pbp-xW-hFZ" secondAttribute="trailing" id="s3G-7z-44b"/>
+                            <constraint firstAttribute="bottom" secondItem="lkO-bv-yNF" secondAttribute="bottom" constant="8" id="sDn-jB-eer"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.204694689417178" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aUg-a4-ZfN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VXr-aT-P4i"/>
+                <constraint firstItem="aUg-a4-ZfN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y2s-d3-dxg"/>
+                <constraint firstAttribute="trailing" secondItem="aUg-a4-ZfN" secondAttribute="trailing" id="aAy-iv-2UI"/>
+                <constraint firstAttribute="bottom" secondItem="aUg-a4-ZfN" secondAttribute="bottom" id="aLS-pb-r9r"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="338" height="336"/>
+            <connections>
+                <outlet property="addButton" destination="efr-mH-e8y" id="BED-Mg-GiM"/>
+                <outlet property="buttonWidthConstraint" destination="GoX-Kb-kir" id="ky6-jV-O2I"/>
+                <outlet property="containerView" destination="aUg-a4-ZfN" id="vvq-Lw-NPF"/>
+                <outlet property="productImage" destination="Pbp-xW-hFZ" id="BVn-Ed-ZpA"/>
+                <outlet property="productPrice" destination="lkO-bv-yNF" id="p63-QQ-fyD"/>
+                <outlet property="productTitle" destination="uYJ-Bv-5PR" id="wd1-sI-u5w"/>
+            </connections>
+            <point key="canvasLocation" x="-32" y="-50.374812593703155"/>
+        </collectionViewCell>
+    </objects>
+</document>
